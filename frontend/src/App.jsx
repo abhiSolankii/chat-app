@@ -18,12 +18,10 @@ function App() {
           <Route
             path="/login"
             element={authUser ? <Navigate to="/" /> : <Login />}
-            // element={<Login />}
           />
           <Route
             path="/signup"
             element={authUser ? <Navigate to="/" /> : <Signup />}
-            // element={<Signup />}
           />
         </Routes>
         <Toaster />
